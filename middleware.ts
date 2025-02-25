@@ -1,8 +1,6 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
-export default clerkMiddleware({
-  publicRoutes: ["/api/:path*"],
-});
+export default clerkMiddleware();
 
 export const config = {
   matcher: [
